@@ -198,7 +198,7 @@ Navbar
   color: var(--aclr-primary-5);
 }
 .nav-links{
-  /* visibility: hidden; */
+  visibility: hidden;
   display: none;
 }
 .nav{
@@ -328,7 +328,7 @@ Sidebar
   color: rgb(187, 28, 28);
 }
 .show-sidebar{
-  /* transform: translateX(0); */
+  transform: translateX(0);
   /* add later */
 }
 
@@ -768,7 +768,7 @@ Skills
 ===============
 */
 /* spinner */
-.loading{
+.spining{
   height: 4.5rem;
   width: 4.5rem;
   border: 5px solid white;
