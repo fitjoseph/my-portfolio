@@ -239,6 +239,7 @@ Navbar
     justify-items: center;
     column-gap: 2rem;
     justify-self: end;
+    visibility: visible;
   }
   .nav-links a{
     text-transform: capitalize;
