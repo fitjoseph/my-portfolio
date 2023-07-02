@@ -11,9 +11,8 @@
   </head>
 
   <body>
-    <section class="section single-page">
     <!-- navbar -->
-    <nav class="nav navbar-fixed" id="nav">
+    <nav class="nav navbar-fixed abt-nav" id="nav">
       <div class="nav-center">
         <!-- nav header -->
         <div class="nav-header ">
@@ -45,9 +44,8 @@
         </ul>
       </div>
     </nav>
-    <!-- =========
-    nav closing tag to be uncommented
-    -->
+    <!-- end of navbar -->
+    
     <!-- sidebar -->
     <aside class="sidebar show-sidebar" id="sidebar">
       <div>
@@ -78,7 +76,7 @@
       <!-- social icons -->
       <ul class="social-icons">
         <li>
-          <a href="https://linkedin.com/fitjoseph" class="social-icon">
+          <a href="https://linkedin.com/in/fitjoseph" class="social-icon">
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
@@ -112,6 +110,7 @@
     </aside>
     <!-- end of sidebar -->
 
+    <section class="single-page">
     <!-- about title -->
     <div class="section-title aboutpage">
       <h1>about me</h1>
@@ -121,16 +120,24 @@
 
     <div class="section-center page-info">
     <!-- about page -->
-<p>
-  Hello, I am Joseph Kolawole and I am a Web Developer. I live and work in
-  Lagos, Nigeria. I spend most of my day, experimenting with HTML, CSS and
-  JavaScript (and its endless list of frameworks). <br>
-  I enjoy coding and the
-  challenge of learning something new everyday. You can also find me on my instagram page
-  <a href="https://www.instagram.com/fitjoseph"
+
+    <article class="hero-img aboutpage-img">
+      <img src="images/favmywebpic.JPG" alt="" class="hero-photo aboutpage-photo">
+    </article>
+
+    <p class="abt-page-para">
+      Hello, my name is Joseph Kolawole. A Web Developer, Full Stack Web Designer, App Developer, UI/UX designer, Graphics designer and a CyberSecurity Enthuiast. I live and work in Lagos, Nigeria. <br>I spend most of my day, experimenting with HTML, CSS, Tailwind, Bootstrap, SASS, React.JS, JavaScript, PHP, React-Native, Figma, CorelDraw, Adobe Photoshop & illustrator (and endless list of frameworks). 
+      <br>
+      I enjoy coding, designing and the challenge of learning something new everyday. You can also find me on my instagram page
+      <a href="https://www.instagram.com/fitjoseph"
     >CODING ADDICT</a>
-</p>
+    </p>
 </div>
+<!-- home link -->
+  <a href="index.html" class="home"><i class="fa-solid fa-house-circle-check fa-fade"></i><br></a>
+</section>
+<!-- end of section -->
+
 <!-- footer -->
 <footer class="footer about-footer">
   <!-- social icons -->
@@ -170,7 +177,6 @@
     &copy; <span id="date"></span> FitJoseph. All Rights Reserved
   </p>
 </footer>
-</section>
 <!-- end of footer -->
 <script src="./js/app.js"></script>
   </body>
