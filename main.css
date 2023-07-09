@@ -18,7 +18,7 @@ Variables
   --clr-primary-3: hsl(43, 72%, 37%);
   --clr-primary-4: hsl(42, 63%, 48%);
   /* primary/main color */
-  --aclr-primary-5: hsl(49, 96%, 50%);
+  --aclr-primary-5: #facd05;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(43, 89%, 70%);
   --clr-primary-7: hsl(43, 100%, 76%);
@@ -277,24 +277,32 @@ Sidebar
   left: 0;
   z-index: 2;
   display: grid;
+  padding-top: 5rem;
   width: 100%;
   height: 100%;
   place-items: center;
+  place-content: center;
   transition: var(--atransition);
   /* add later */
   transform: translateX(100%);
 }
+.mother-sidebar{
+  display: block;
+}
 .show-sidebar{
-  /* transform: translateX(0); */
   transform: translateX(0);
   /* add later */
+  display: none;
 }
-@media screen and (min-width:800px) {
+/* for aside bar not to show on large screen */
+@media screen and (min-width:790px) {
   .sidebar{
     display: none;
+    visibility: hidden;
   }
   .show-sidebar{
     display: none;
+    visibility: hidden;
   }
 }
 .sidebar-links{
@@ -325,15 +333,18 @@ Sidebar
 }
 .social-icons{
   display: grid;
+  place-items: center;
   grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
   margin-top: 3rem;
   width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .social-icon{
   color: var(--clr-grey-1);
   font-size: 1.5rem;
   transition: var(--atransition);
+  /* place-self: center; */
 }
 .social-icon:hover{
   color: var(--aclr-primary-5);
@@ -366,13 +377,36 @@ Hero
   margin-left: 0;
 }
 .hero-img{
-  /* display: inline-block;
-  width: 20%;
-  border-radius: 20%; */
   display: none;
+}
+/* alternative style for hero small img */
+/* .hero-small-img{
+  max-width: 30%;
+  display: inline;
+  position: relative;
+  top: -5.5rem;
+  left: 10rem;
+  margin-bottom: -7rem;
+} */
+.hero-small-img{
+  max-width: 30%;
+  display: inline;
+  position: relative;
+  top:  11px;
+  left: 0;
+  margin-bottom: 0.2rem;
 }
 .hero{
   background: var(--clr-primary-10);
+  z-index: 3;
+}
+.hero h4{
+  margin-bottom: 1.3rem;
+}
+/* AUTO */
+.auto{
+  color: var(--aclr-primary-5);
+  font-weight: 700;
 }
 .hero-center{
   display: grid;
@@ -384,6 +418,8 @@ Hero
 }
 .hero-icons{
   justify-items: start;
+  margin-left: 0;
+  margin-top: 15px;
 }
 @media screen and (min-width:800px) {
   .hero-center{
@@ -394,7 +430,6 @@ Hero
     width: 50%;
     position: relative;
     z-index: 1;
-
   }
   .hero-img::before, 
   .about-img::before{

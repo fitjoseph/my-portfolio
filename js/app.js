@@ -12,11 +12,19 @@ window.addEventListener("scroll", function () {
   }
 });
 // show sidebar
+// navBtn.addEventListener("click", function () {
+//   sidebar.classList.add("show-sidebar");
+// });
+// closeBtn.addEventListener("click", function () {
+//   sidebar.classList.remove("show-sidebar");
+// });
+
+//javascript for sidebar and show-sidebar
 navBtn.addEventListener("click", function () {
-  sidebar.classList.add("show-sidebar");
+  sidebar.style.display = "block";
 });
 closeBtn.addEventListener("click", function () {
-  sidebar.classList.remove("show-sidebar");
+  sidebar.style.display = "none";
 });
 // set year
 date.innerHTML = new Date().getFullYear();

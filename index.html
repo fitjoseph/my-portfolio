@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <!-- css link -->
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="/css/styles.css">
+  <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+  <!-- favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
   </head>
 
   <body>
@@ -48,6 +50,7 @@
     <!-- end of navbar -->
     
     <!-- sidebar -->
+    <section class="mother-sidebar">
     <aside class="sidebar show-sidebar" id="sidebar">
       <div>
         <button class="close-btn" id="close-btn">
@@ -108,13 +111,9 @@
       </ul>
   <!-- end of social icon -->
       </div>
-
-      <!-- home link -->
-<a href="index.html" class="home">
-  <i class="fa-solid fa-house-circle-check fa-fade aside-home ome"></i><br>
-</a>
     </aside>
     <!-- end of sidebar -->
+  </section>
 
     <!-- header -->
     <header class="hero">
@@ -122,12 +121,15 @@
         <article class="hero-info">
           <div class="underline"></div>
           <h1>i'm joseph</h1>
-          <h4>Freelance Full Stack Web & App Developer</h4>
+          <h4>A Freelance Full Stack <span class="auto"></span> &  Cybersecurity Geek </h4>
+
+          <img src="/images/mypic2.JPG" alt="" class="hero-small-img">
           <a href="contact.html" class="btn hero-btn">hire me</a>
+
           <!-- social icons -->
       <ul class="social-icons hero-icons">
         <li>
-          <a href="https://linkedin.com/fitjoseph" class="social-icon">
+          <a href="https://linkedin.com/in/fitjoseph" class="social-icon">
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
@@ -545,7 +547,7 @@
             </p>
             <div class="blog-footer">
               <img src="/images/favmywebpic.JPG" alt="" class="blog-footer-img">
-              <p>7 min read</p>
+              <p>10 min read</p>
             </div>
             </div>
             <!-- end of card info -->
@@ -571,7 +573,7 @@
               
             </p>
             <div class="blog-footer">
-              <img src="/images/favmywebpic.JPG" alt="" class="blog-footer-img">
+              <img src="/images/mypic2.JPG" alt="" class="blog-footer-img">
               <p>7 min read</p>
             </div>
             </div>
@@ -598,7 +600,7 @@
             </p>
             <div class="blog-footer">
               <img src="/images/favmywebpic.JPG" alt="" class="blog-footer-img">
-              <p>7 min read</p>
+              <p>6 min read</p>
             </div>
             </div>
             <!-- end of card info -->
@@ -623,8 +625,8 @@
               Graphic designers are creative professionals who use visual elements to communicate messages, ideas, and information. They create designs for logos, brochures, websites, packaging, advertisements, or other promotional materials.
             </p>
             <div class="blog-footer">
-              <img src="/images/favmywebpic.JPG" alt="" class="blog-footer-img">
-              <p>7 min read</p>
+              <img src="/images/mypic2.JPG" alt="" class="blog-footer-img">
+              <p>9 min read</p>
             </div>
             </div>
             <!-- end of card info -->
@@ -680,6 +682,17 @@
         &copy; <span id="date"></span> FitJoseph. All Rights Reserved
       </p> 
     </footer>
+
+    <!--my hero JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto", {
+        strings: ["Web Developer","Web Designer", "Mobile App Developer", "UI/UX / Graphics Designer",  "@Fitjoseph"],
+        typeSpeed: 120,
+        backSpeed: 70,
+        loop: true,
+      });
+    </script>
 <!-- end of footer -->
     <script src="./js/app.js"></script>
   </body>
