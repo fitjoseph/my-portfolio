@@ -10,7 +10,6 @@ Fonts
 Variables
 ===============
 */
-
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(43, 86%, 17%);
@@ -76,7 +75,6 @@ img:not(.nav-logo) {
   width: 100%;
   display: block;
 }
-
 h1,
 h2,
 h3,
@@ -103,7 +101,6 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
-
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -128,7 +125,6 @@ p {
   }
 }
 /*  global classes */
-
 .btn {
   text-transform: uppercase;
   background: var(--aclr-primary-5);
@@ -179,7 +175,6 @@ p {
 .bg-grey{
   background: var(--clr-grey-10);
 }
-
 /*
 =============== 
 Navbar
@@ -344,7 +339,6 @@ Sidebar
   color: var(--clr-grey-1);
   font-size: 1.5rem;
   transition: var(--atransition);
-  /* place-self: center; */
 }
 .social-icon:hover{
   color: var(--aclr-primary-5);
@@ -364,8 +358,6 @@ Sidebar
 .close-btn:hover{
   color: rgb(187, 28, 28);
 }
-
-
 /*
 =============== 
 Hero
@@ -451,7 +443,6 @@ Hero
   border-radius: var(--radius);
   position: relative;
 }
-
 /*
 =============== 
 About
@@ -487,7 +478,6 @@ About
   .girl-pic{
     width: 90%;
     justify-self: center;
-    
   }
   .about-img{
     position: relative;
@@ -521,17 +511,13 @@ Services
 ===============
 */
 /* bg-grey in globals */
-
 .service-card{
   background: var(--aclr-white);
   padding: 3rem 1.5rem;
   border-radius: var(--radius);
   margin-bottom: 2rem;
-  /* display: grid;
-  justify-items: center; */
   text-align: center;
   transition: var(--atransition);
-  
 }
 .service-card:hover{
   background-color: var(--aclr-primary-5);
@@ -580,8 +566,6 @@ Services
   
 }
 /* small screen layout setup */
-
-
 /*
 =============== 
 Projects latest works
@@ -641,7 +625,6 @@ Projects latest works
   border-radius: var(--radius);
   transition: var(--atransition);
   opacity: 0;
-  
 }
 .project:hover::after{
   opacity: 1;
@@ -698,7 +681,6 @@ Connect
   margin: 5rem 0;
   min-height: 40vh;
   clip-path: polygon(50% 0, 100% 15%, 100% 75%, 50% 100%, 0 75%, 0 15%);
-  
 }
 .video{
   position: absolute;
@@ -738,7 +720,6 @@ Connect
   max-width: 30rem;
   color: black;
 }
-
 /*
 =============== 
 Scalling section
@@ -774,7 +755,6 @@ Scalling section
   max-width: 200px;
   max-height: 280px;
   display: grid;
-  /* place-items: center; */
   transition: all ease 0.5s;
   background: var(--aclr-primary-5);
   color: var(--aclr-white);
@@ -815,16 +795,12 @@ Scalling section
   margin-top: 6rem;
   padding: 10px 10px;
   display: grid;
-  /* opacity: 0;
-  visibility: hidden; */
   display: none;
 }
 .scale-card:hover .scale-btn{
   background: none;
   border-color: white;
   color: var(--aclr-primary-5);
-  /* opacity: 1;
-  visibility: visible; */
   display: grid;
 }
 .scale-card h4{
@@ -839,25 +815,6 @@ Scalling section
 Skills
 ===============
 */
-/* spinner */
-.spining{
-  height: 4.5rem;
-  width: 4.5rem;
-  border: 5px solid white;
-  border-radius: 50%;
-  border-top-color: var(--aclr-primary-5);
-  margin: 0 auto;
-  animation: name duration timing-function delay iteration-count direction fill-mode;
-  animation: spinner 1s linear infinite;
-  margin-top: 2rem;
-  margin-bottom: -2rem;
-}
-@keyframes spinner{
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @media screen and (min-width:700px) {
   .skills-center{
     display: grid;
@@ -886,7 +843,6 @@ Skills
   background: var(--aclr-primary-5);
   border-radius: var(--radius);
 }
-
 .skill p{
   color: var(--clr-primary-1);
 }
@@ -925,7 +881,38 @@ Skills
 .skill-text-68{
   left: 68%;
 }
-
+/* more skills */
+.more-skills{
+  color: var(--clr-grey-1);
+  padding-left: 7%;
+}
+.more-skills span{
+  color: var(--aclr-white);
+}
+.more-skills:hover{
+  color: white;
+}
+.more-skills:hover span{
+  color: red;
+}
+/* spinner */
+.spining{
+  height: 4rem;
+  width: 4rem;
+  border: 5px solid white;
+  border-radius: 50%;
+  border-top-color: var(--aclr-primary-5);
+  margin: 0 auto;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: spinner 1s linear infinite;
+  margin-top: 1.5rem;
+  margin-bottom: -2rem;
+}
+@keyframes spinner{
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*
 =============== 
 Timeline
@@ -1008,8 +995,7 @@ Blog
   perspective: 1500px;
   height: 31rem;
   width: 330px;
-  /* margin-bottom: 2rem; */
-  /* max-width: 330px; */
+  overflow: hidden;
   display: grid;
   grid-template-rows: auto auto auto;
 }
