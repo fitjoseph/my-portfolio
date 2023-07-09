@@ -395,6 +395,7 @@ Hero
   top:  11px;
   left: 0;
   margin-bottom: 0.2rem;
+  border-radius: 6px;
 }
 .hero{
   background: var(--clr-primary-10);
